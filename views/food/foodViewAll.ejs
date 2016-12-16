@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Foods</title>
+</head>
+<body>
+<h1>Foods</h1>
+<table border="1">
+    <tr><th>Food ID</th><th>Name</th><th>Recipe</th></tr>
+    <% for(var i=0; result.length > i; i++ ) { %>
+    <tr>
+        <td><%= result[i].food_id%></td>
+        <td><%= result[i].food_name %></td>
+        <td><%= result[i].recipe %></td>
+    </tr>
+    <% } %>
+</table>
+</body>
+
+</html>

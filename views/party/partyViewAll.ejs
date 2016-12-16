@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>Parties</title>
+</head>
+<body>
+<h1>Parties</h1>
+<table border="1">
+    <tr><th>Party ID</th><th>Name</th></tr>
+    <% for(var i=0; result.length > i; i++ ) { %>
+    <tr>
+        <td><%= result[i].party_id%></td>
+        <td><%= result[i].party_name %></td>
+    </tr>
+    <% } %>
+</table>
+</body>
+
+</html>
